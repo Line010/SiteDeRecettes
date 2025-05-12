@@ -77,6 +77,9 @@
                         Don't have an account? <a href="signup.php">Sign Up Now</a>
                     </div>
                 </form>
+                <div class="links">
+                    <a href="forgot-password.php">Forgot your password?</a>
+                </div>
             </div>
         </div>
 

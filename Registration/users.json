@@ -61,7 +61,7 @@
     },
     {
         "username": "Admin",
-        "password": "$2y$10$b0bk91k.oQtJosHfucXf7eSqAd3mEcYHjkwHNG\/tOxkAopRxdz2Am",
+        "password": "$2y$10$2S7r0O4SuqoXrftIrXs.jO55NfPS45w8BGTSIwDs49SkJvTYULXRW",
         "role": [
             "Admin"
         ],

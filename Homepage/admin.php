@@ -78,6 +78,8 @@
     </head>
 
     <home>
+
+
          <!-- Section Header contenant:
            - le logo en tant que lien à la page home
            - une barre de recherche

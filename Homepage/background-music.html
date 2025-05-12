@@ -1,0 +1,22 @@
+<audio id="backgroundMusic" autoplay loop>
+    <source src="../Registration/Images/jazzMusic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const music = document.getElementById("backgroundMusic");
+
+    // Resume music from saved time
+    window.addEventListener('load', () => {
+        const savedTime = localStorage.getItem("musicTime");
+        if (savedTime) {
+            music.currentTime = parseFloat(savedTime);
+        }
+        music.play();
+    });
+
+    // Save current playback time
+    setInterval(() => {
+        localStorage.setItem("musicTime", music.currentTime);
+    }, 1000);
+</script>

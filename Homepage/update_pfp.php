@@ -57,6 +57,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <link rel="stylesheet" href="../Registration/registration.css">
     </head>
     <body>
+
+        <div id="background-music-container"></div>
+        <script>
+            if (!document.getElementById('backgroundMusic')) {
+                fetch('background-music.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('background-music-container').innerHTML = data;
+
+                        const music = document.getElementById("backgroundMusic");
+
+                        const savedTime = localStorage.getItem("musicTime");
+                        if (savedTime) {
+                            music.currentTime = parseFloat(savedTime);
+                        }
+                        music.play().catch(err => {
+                            console.warn("Autoplay might be blocked:", err);
+                        });
+                        setInterval(() => {
+                            if (!music.paused) {
+                                localStorage.setItem("musicTime", music.currentTime);
+                            }
+                        }, 1000);
+                    })
+                    .catch(error => {
+                        console.error('Error loading background music:', error);
+                    });
+            }
+        </script>
+
         <div class="container">
             <div class="box">
                 <div class="profile-header">
