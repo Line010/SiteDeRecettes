@@ -1,0 +1,404 @@
+/************************ ENTÊTE ***********************************/
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.entete img {
+    border-radius: 50%;
+}
+
+/* Recherche */
+.recherche-container {
+    position: relative;
+    width: 250px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #f06;
+    font-size: 16px;
+    font-family: "Roboto-Mono", monospace;
+}
+.suggestions-container {
+    position: absolute;
+    background-color: white;
+    border: 1px solid pink;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 200px;
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+}
+
+.suggestions-container li {
+    padding: 5px;
+    cursor: pointer;
+}
+.suggestions-container li:hover {
+    background-color: pink;
+}
+
+.entete_droite {
+    display : flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.entete_centre{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*********************** TITRE *****************************/
+#titre_recettes {
+    text-align: center;
+    font-family: "Roboto-Mono", monospace;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+.main{
+    
+    display: flex;
+    justify-content: left;
+    /* padding: 10px 40px; */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+}
+.filtres {
+    
+    /* display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 20px; */
+    margin: 30px ;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    gap: 30px;
+
+}
+.f {
+    /* border: 3px solid pink;
+    border-radius: 8px;
+    text-align: center;
+    width: 700px; 
+    box-shadow: 5px 5px 5px rgb(255, 227, 231);
+     */
+     display: flex;
+     align-items: center;
+     flex: 1;
+     min-width: 300px;
+     padding: 10px;
+     border: 3px solid pink;
+     border-radius: 12px;
+     box-shadow: 5px 5px 15px rgba(255, 182, 193, 0.3);
+     background-color: white;
+     padding-bottom: 10px;
+     gap : 20px;
+}
+.f:hover, .recette:hover {
+    background-color: pink;
+    color: white;
+    border: none;
+}
+
+.commentaire {
+    text-align: center;
+}
+.recettes {
+    margin: 30px ;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    gap : 30px;
+}
+.recette {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    border: 3px solid pink;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(255, 182, 193, 0.3);
+    background-color: white;
+    padding-bottom: 5px;
+    gap : 30px;
+}
+
+
+.recette_text h3 {
+    font-size: 1.4rem;
+    color: #f06;
+    margin-bottom: 1px;
+}
+
+.recette img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/********************* RECIPE PAGE ***********************************/
+body {
+    font-family: "Roboto-Mono", monospace;
+    
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+#titre_recettes {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+}
+.recipe-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recipe-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.recipe-header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+.recipe-image {
+    width: 100%;
+    height: auto;
+    
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.recipe-header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+.recipe-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.recipe-text b {
+    color: #f06;
+}
+
+.section{
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Time and Likes Section */
+.recipe-meta {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.recipe-meta span {
+    margin: 0 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.like-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.like-button span {
+    font-size: 16px;
+    color: #555;
+    margin-left: 10px;
+}
+
+.like-button div {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #888;
+}
+
+/************************* INGREDIENTS AND STEPS *******************************/
+h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #f06;
+    text-align: center;
+}
+
+.ingredients, .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ingredients ul, .steps ol {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.ingredients li, .steps li {
+    margin-bottom: 15px;
+}
+
+.steps ol {
+    padding-left: 30px;
+}
+
+/************************* COMMENTS *******************************/
+.comment-form {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.comment-form h2 {
+    font-size: 2rem;
+    color: #f06;
+    margin-bottom: 15px;
+}
+
+.comment-text textarea {
+    width: 80%;
+    height: 150px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+    background-color: #fff;
+    resize: none;
+}
+
+.comment-buttons {
+    margin-top: 10px;
+}
+
+.comment-button, .refresh-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #f06;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.comment-button:hover, .refresh-button:hover {
+    background-color: #e05a5a;
+}
+
+/************************* COMMENT DISPLAY *******************************/
+.comment {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment h3 {
+    font-size: 1.4rem;
+    color: #f06;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/************************* MOBILE RESPONSIVENESS *******************************/
+@media (max-width: 768px) {
+    .ingredients, .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .comment-text textarea {
+        width: 90%;
+    }
+
+    .like-button {
+        flex-direction: column;
+    }
+
+    .entete input[type="text"] {
+        width: 100%;
+    }
+}
+/********************** Traduction option in recette.php ********************************************************************************/
+.blocTrad{
+    display: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.lienTrad{
+    text-align: center;
+    text-decoration: none;
+}
+.textTraduction{
+    font-size: 14px;
+    color: #f50057;
+    font-weight: bold;
+}
+
+.imgTrad{
+    display: block;
+    margin: 0 auto;
+}

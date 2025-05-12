@@ -1,0 +1,71 @@
+[
+    {
+        "username": "linee",
+        "password": "$2y$10$QiGoZ79o55y0D1Al.81lDu1xrmvFhDIwgceIeSIQJ9KAJvXpFApkS",
+        "role": [
+            "Cuisinier"
+        ],
+        "age": "20",
+        "email": "line.hajjarr@gmail.comsss"
+    },
+    {
+        "username": "line.hajjarsaaaa",
+        "password": "$2y$10$G3eGNpt8.LvBpZdLzy8cpeK.kjLOKUIBICZykuz88Hh5.Z3U0Tosq",
+        "role": [
+            "Cuisinier",
+            "DemandeChef"
+        ],
+        "age": "20",
+        "email": "line.hajjarr@gmail.comaaaa"
+    },
+    {
+        "username": "line.hD",
+        "password": "$2y$10$jj5Qb4bj3ixdpaUe2hecv.bDHgy0GDi9jmxFo0dEQYHog\/X4sZbLW",
+        "role": [
+            "Cuisinier",
+            "Chef"
+        ],
+        "age": "30",
+        "email": "line.jjarr@gmail.cF"
+    },
+    {
+        "username": "fcheftrad",
+        "password": "$2y$10$hcegbV1NXcrhkuERKX3maejEEGnKsVqnozRErlOJufabz8DbWAJkS",
+        "role": [
+            "Cuisinier",
+            "DemandeTraducteur"
+        ],
+        "age": "23",
+        "email": "f@ct.fr"
+    },
+    {
+        "username": "trans",
+        "password": "$2y$10$hZ0tLG2eS4lXJi9xslvqUeipp4PD\/.Jlsk26KtE4KFIzpH5t6IIwK",
+        "role": [
+            "Cuisinier",
+            "Traducteur"
+        ],
+        "age": "34",
+        "email": "t@gd.fr"
+    },
+    {
+        "username": "fatou",
+        "password": "$2y$10$\/TBa4FxiSD.F1s2r9BQZGe\/RQF3JNjPAWdKY5sX6dSUsRjt0oD4.C",
+        "role": [
+            "Cuisinier",
+            "Chef",
+            "Traducteur"
+        ],
+        "age": "23",
+        "email": "f@o.ft"
+    },
+    {
+        "username": "Admin",
+        "password": "$2y$10$b0bk91k.oQtJosHfucXf7eSqAd3mEcYHjkwHNG\/tOxkAopRxdz2Am",
+        "role": [
+            "Admin"
+        ],
+        "age": "23",
+        "email": "a@d.fr"
+    }
+]
