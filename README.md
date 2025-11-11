@@ -11,13 +11,13 @@ kernelspec:
   language: python
   name: python3
 ---
-# ⚠️ **IMPORTANT – À LIRE AVANT TOUT :**
+# ! **IMPORTANT – À LIRE AVANT TOUT :**
 
 **Ouvrir cette feuille avec l’extension Jupyter dans VSCode :**
 > Clic droit sur le fichier [README.md](README.md) → **"Ouvrir avec Jupyter Notebook (Preview)"**  
 > ou utiliser **JupyterLab** pour une meilleure expérience de lecture.
 ---
-# 🎯 But de la feuille
+#  But de la feuille
 
 > Ce document explique comment exécuter et naviguer dans le site web **CaféGo**, un projet PHP HTML/CSS avec données JSON, dédié à la traduction de recettes.
 
@@ -51,7 +51,7 @@ kernelspec:
 ```
 ---
 
-## 🚀 Lancer le site localement
+##  Lancer le site localement
 
 > 1. **Ouvre VS Code avec WSL** *(ou tout autre éditeur compatible avec PHP)*.
 > 2. Lancer un serveur PHP avec la commande suivante dans le terminal :
@@ -59,19 +59,19 @@ kernelspec:
 ```bash
 php -S localhost:8000
 ```
-### 🟢 Lancer le site localement
+###  Lancer le site localement
 
 > Une fois le serveur lancé, le terminal vous proposera de suivre le lien suivant :
 
 🔗 [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-> 📌 **Attention** : Pour commencer avec l'inscription, vous devez accéder manuellement à la page :
+>  **Attention** : Pour commencer avec l'inscription, vous devez accéder manuellement à la page :
 >
 > [http://127.0.0.1:8000/Registration/signup.php](http://127.0.0.1:8000/Registration/signup.php)
 
 ---
 
-### ✍️ Inscription
+###  Inscription
 
 > Sur la page [signup.php](Registration/signup.php), vous devez saisir :
 >
@@ -85,7 +85,7 @@ php -S localhost:8000
 >   - un chiffre.
 > - **Âge**
 
-➡️ Vous serez redirigé vers [role.php](Registration/role.php), où vous choisirez votre rôle :
+ Vous serez redirigé vers [role.php](Registration/role.php), où vous choisirez votre rôle :
 
 > - 🧑‍🍳**Cuisinier** : consulter, liker, commenter les recettes, publier des photos, consulter son profil.
 > - 👨‍🍳**Chef** : même droits + ajouter/modifier ses propres recettes.
@@ -93,12 +93,12 @@ php -S localhost:8000
 
 📍 Ensuite, vous serez redirigé vers **[home.html](Homepage/home.html)**.
 
-> 🛂 L’admin doit valider votre rôle. En attendant, vous avez le rôle :
+>  L’admin doit valider votre rôle. En attendant, vous avez le rôle :
 > `DemandeChef` ou `DemandeTraducteur`.
 
 ---
 
-### 🔐 Connexion (**[login.php](Registration/login.php)**)
+###  Connexion (**[login.php](Registration/login.php)**)
 
 >Si vous avez déjà un compte :
 > - Entrez votre **nom d'utilisateur** et **mot de passe** pour vous connecter.<br>
@@ -113,19 +113,19 @@ Comme ceci:<br>
 
 ---
 
-### 👤 Profil (**[profile.php](Homepage/profile.php)**)
+###  Profil (**[profile.php](Homepage/profile.php)**)
 
 >- Cliquez sur l’icône en haut à droite pour accéder à votre profil.
 >- Depuis cette page :
 >  - Voir vos infos personnelles.
 >  - Modifier via `update_pfp.php`.  
->    ⚠️ Vous devez changer au moins **le nom et l’email**.
+>    ! Vous devez changer au moins **le nom et l’email**.
 >  - Une fois validé, retour à `profile.php`.
 >  - Bouton **Back** pour revenir à `[**home.html**](Homepage/home.html)`.
 
 ---
 
-### 🏠 Accueil (**[home.php](Homepage/home.php)**)
+###  Accueil (**[home.php](Homepage/home.php)**)
 
 >- Appelle `recipes.php` pour charger les recettes.
 >- **Fonctionnalités** :
@@ -136,7 +136,7 @@ Comme ceci:<br>
 
 ---
 
-### 📄 Page Recette (**[recipe.php](Homepage/recipe.php)**)
+###  Page Recette (**[recipe.php](Homepage/recipe.php)**)
 
 >Sur cette page, vous pouvez :
 >
@@ -155,12 +155,12 @@ Comme ceci:<br>
 
 ---
 
-### 🍳 Création de recette **[addrecipe.php](Homepage/addrecipe.php)**
+###  Création de recette **[addrecipe.php](Homepage/addrecipe.php)**
 
 Cette page permet à un utilisateur (auteur) de créer une nouvelle recette complète via un formulaire interactif.  
 Les données sont ensuite enregistrées dans le fichier `recipes.json`.
 
-#### ✅ Fonctionnalités disponibles :
+####  Fonctionnalités disponibles :
 
 - **Nom de la recette** en anglais (`name`) et en français (`nameFR`).
 - **Filtres diététiques** à cocher :  
@@ -183,7 +183,7 @@ Les données sont ensuite enregistrées dans le fichier `recipes.json`.
 
 ---
 
-### 🌐 Traduction (**[traduction.php](Homepage/traduction.php)**)
+###  Traduction (**[traduction.php](Homepage/traduction.php)**)
 
 >En cliquant sur le bouton de traduction, vous accédez à cette page.
 >
@@ -205,7 +205,7 @@ Les données sont ensuite enregistrées dans le fichier `recipes.json`.
 
 ---
 
-#### 🛠️ Modification de recette (auteur uniquement)
+####  Modification de recette (auteur uniquement)
 
 >Si vous cliquez sur le bouton de **modification** :
 >
@@ -217,7 +217,7 @@ Les données sont ensuite enregistrées dans le fichier `recipes.json`.
 
 ---
 
-### 🛡️ Administration (**[admin.php](Registration/admin.php)**)
+###  Administration (**[admin.php](Registration/admin.php)**)
 
 >##### Accessible uniquement aux administrateurs :
 > - Consulter la **liste de tous les utilisateurs inscrits** et visualiser les **informations de chaque utilisateur** (nom, email, rôle, âge...).
