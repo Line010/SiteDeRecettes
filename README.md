@@ -23,7 +23,7 @@ kernelspec:
 
 ---
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```text
 ├── Homepage/
