@@ -64,7 +64,7 @@ php -S localhost:8000
 > Sur la page [signup.php](Registration/signup.php), vous devez saisir :
 >
 > - **Nom d'utilisateur**  
->  ⚠️ Si vous êtes un chef, ce nom servira aussi à vous identifier comme auteur.
+>   Si vous êtes un chef, ce nom servira aussi à vous identifier comme auteur.
 > - **Email** (utilisé pour la récupération du mot de passe)
 > - **Mot de passe** respectant les critères :
 >   - au moins 8 caractères,
@@ -79,7 +79,7 @@ php -S localhost:8000
 > - 👨‍🍳**Chef** : même droits + ajouter/modifier ses propres recettes.
 > - 🌍 **Traducteur** : traduire toutes les recettes.
 
-📍 Ensuite, vous serez redirigé vers **[home.html](Homepage/home.html)**.
+ Ensuite, vous serez redirigé vers **[home.html](Homepage/home.html)**.
 
 >  L’admin doit valider votre rôle. En attendant, vous avez le rôle :
 > `DemandeChef` ou `DemandeTraducteur`.
@@ -118,7 +118,7 @@ Comme ceci:<br>
 >- Appelle `recipes.php` pour charger les recettes.
 >- **Fonctionnalités** :
 >  - Filtres (ex. : *Vegan* → affiche les recettes vegan).
->  - Recherche par nom dans la 🔍 **barre de recherche** .
+>  - Recherche par nom dans la  **barre de recherche** .
 >  - Cliquer sur le **titre** ou **image** d’une recette :
 >    redirection vers `recipe.php` avec le nom passé en paramètre.
 
@@ -139,7 +139,7 @@ Comme ceci:<br>
 >    - partager un message,
 >    - **ajouter une image** à votre commentaire.
 
-📌 Si vous publiez un commentaire, il apparaîtra **à la fin de votre propre liste de commentaires**.
+ Si vous publiez un commentaire, il apparaîtra **à la fin de votre propre liste de commentaires**.
 
 ---
 
